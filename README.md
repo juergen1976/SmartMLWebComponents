@@ -17,6 +17,8 @@ interest for the user.
 Run `browserify ./js/smartcomponents.js -o ./js/smartcomponentsBundled.js` when updating
 source code.
 
+![](./docimages/smartcomponent.png)
+
 
 __SmartWizard__ is using supervised learning and multiple linear regression to identify the read speed of the user and
 automatically forward to the next section after the learning epoch.
