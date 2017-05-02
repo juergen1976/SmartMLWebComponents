@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Smart components Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/smartcomponents.css">
+</head>
+<body id="watch">
+<p><b>SmartComponents - Machine Learning in the Web</b></p>
+<p>Using a classification and decision tree (CART)</p>
+<p>Interact with the elements. Hover and click if you want. Click an element will set the label (output) to 1</p>
+    <button id="reset">reset</button>
+    <div id="1" class="smart" style="position: absolute; left: 200px; top: 220px; width: 200px; height: 50px; border: solid">Component 1</div>
+    <div id="2" class="smart" style="position: absolute; left: 200px; top: 300px; width: 300px; height: 150px; border: solid">Component 2</div>
+    <div id="3" class="smart" style="position: absolute; left: 400px; top: 700px; width: 100px; height: 80px; border: solid">Component 3</div>
+    <div id="4" class="smart" style="position: absolute; left: 500px; top: 1100px; width: 200px; height: 130px; border: solid">Component 4</div>
+<p>
+    <fieldset>
+        <legend>Predict new component:</legend>
+        Hovered (0 or 1): <input id="predHovered" type="text" value="0">
+        Width: <input id="predWidth" type="text" value="100">
+        Height: <input id="predHeight" type="text" value="100">
+        X: <input id="predX" type="text" value="300">
+        Y: <input id="predY" type="text" value="400">
+
+        <button id="run">run decision tree</button>
+    </fieldset>
+</p>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.lactame.com/lib/ml/2.0.0/ml.min.js"></script>
+    <script src="js/smartcomponentsBundled.js"></script>
+</html>
